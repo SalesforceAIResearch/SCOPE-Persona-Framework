@@ -42,15 +42,16 @@ Salesforce Research, Palo Alto, CA, USA
 ```
 scope-personas/
 ├── src/
-│   ├── augment_persona.py          # Generic persona augmentation pipeline
-│   ├── process_nemotron.py         # Process NVIDIA Nemotron personas
-│   └── utils.py                    # Shared utilities
+│   ├── augment_persona.py                      # Generic persona augmentation pipeline
+│   ├── process_nemotron.py                     # Process NVIDIA Nemotron personas
+│   └── utils.py                                # Shared utilities
 ├── data/
-│   ├── questionnaire.md            # 141-item sociopsychological protocol
-│   └── facet_definitions.json      # Facet structure definitions
+│   ├── questionnaire.md                        # 141-item sociopsychological protocol
+│   ├── Nemotron_Augmented_Sample.jsonl         # 10 Sample Personas of Nemotron + Scope Augment
+│   └── facet_definitions.json                  # Facet structure definitions
 ├── examples/
-│   ├── sample_personas.jsonl       # Example input personas
-│   └── sample_output.jsonl         # Example augmented output
+│   ├── sample_personas.jsonl                   # Example input personas
+│   └── sample_output.jsonl                     # Example augmented output
 ├── requirements.txt
 └── README.md
 ```
