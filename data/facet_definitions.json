@@ -1,0 +1,115 @@
+{
+  "facets": {
+    "demographics": {
+      "name": "Demographic Information",
+      "description": "Basic demographic and background information",
+      "questions": {
+        "start": 1,
+        "end": 13
+      },
+      "question_types": ["multiple_choice", "short_text"]
+    },
+    "sociodemographic": {
+      "name": "Sociodemographic Behavior",
+      "description": "Digital habits, civic engagement, health, and lifestyle patterns",
+      "questions": {
+        "start": 14,
+        "end": 50
+      },
+      "question_types": ["dropdown_scale"]
+    },
+    "values": {
+      "name": "Personal Values & Motivations",
+      "description": "Core beliefs, values from Schwartz Value Survey, and life goals",
+      "questions": {
+        "start": 51,
+        "end": 72
+      },
+      "question_types": ["opinion_scale", "multiple_choice"]
+    },
+    "personality": {
+      "name": "Personality Traits (Big Five)",
+      "description": "Comprehensive personality assessment across five dimensions",
+      "questions": {
+        "start": 73,
+        "end": 102
+      },
+      "question_types": ["opinion_scale"],
+      "dimensions": [
+        "extraversion",
+        "agreeableness",
+        "conscientiousness",
+        "neuroticism",
+        "openness"
+      ]
+    },
+    "behavioral": {
+      "name": "Behavioral Patterns & Preferences",
+      "description": "Daily habits, social preferences, and lifestyle choices",
+      "questions": {
+        "start": 103,
+        "end": 115
+      },
+      "question_types": ["multi_format", "multiple_choice"]
+    },
+    "identity": {
+      "name": "Personal Identity & Life Narratives",
+      "description": "Personal stories, relationships, and identity formation",
+      "questions": {
+        "start": 116,
+        "end": 125
+      },
+      "question_types": ["multi_format"]
+    },
+    "professional": {
+      "name": "Professional Identity & Career",
+      "description": "Work experiences, career goals, and professional development",
+      "questions": {
+        "start": 126,
+        "end": 135
+      },
+      "question_types": ["multi_format", "opinion_scale"]
+    },
+    "creativity": {
+      "name": "Creativity & Innovation",
+      "description": "Creative expression, artistic thinking, and innovative capabilities",
+      "questions": {
+        "start": 136,
+        "end": 141
+      },
+      "question_types": ["multi_format"]
+    }
+  },
+  "total_questions": 141,
+  "response_formats": {
+    "opinion_scale": {
+      "description": "1-5 Likert scale",
+      "scale": {
+        "1": "Very Inaccurate",
+        "2": "Inaccurate",
+        "3": "Neutral",
+        "4": "Accurate",
+        "5": "Very Accurate"
+      }
+    },
+    "dropdown_scale": {
+      "description": "Frequency or agreement scale with predefined options"
+    },
+    "multiple_choice": {
+      "description": "Select from predefined options (single or multiple selection)"
+    },
+    "multi_format": {
+      "description": "Free-form text response with minimum word requirements"
+    },
+    "short_text": {
+      "description": "Brief text response"
+    }
+  },
+  "metadata": {
+    "version": "1.0",
+    "source": "SCOPE Framework",
+    "paper": "https://arxiv.org/abs/2601.07110",
+    "participants": 124,
+    "protocol_duration": "2 hours"
+  }
+}
