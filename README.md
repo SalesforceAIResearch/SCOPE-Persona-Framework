@@ -244,7 +244,7 @@ If you use SCOPE in your research, please cite:
 ## License
 
 This project is licensed under the CC BY-NC 4.0 License - see the [LICENSE](LICENSE) file for details.
-
+This dataset should not also be used to develop models that compete with OpenAI and is only released for research purposes.
 
 ## Acknowledgments
 
