@@ -19,7 +19,7 @@ SCOPE is a human-grounded framework for constructing and evaluating synthetic pe
 
 ## Pipeline Diagram
 
-![SCOPE pipeline diagram](Images/Pipeline.png)
+![SCOPE pipeline diagram](Pipeline.png)
 
 ## Key Findings
 
@@ -28,27 +28,6 @@ Our research demonstrates that:
 - **Demographics alone are insufficient**: Demographic similarity explains only ~1.5% of variance in human response similarity
 - **Sociopsychological grounding improves alignment**: Adding values, identity, and personality facets improves behavioral prediction
 - **Non-demographic personas reduce bias**: Personas based on values and identity alone achieve strong alignment with substantially lower demographic bias accentuation
-
-## Paper
-
-**The Need for a Socially-Grounded Persona Framework for User Simulation**
-
-*Pranav Narayanan Venkit, Yu Li, Yada Pruksachatkun, Chien-Sheng Wu*
-
-Salesforce Research, Palo Alto, CA, USA
-
-**arXiv:** [https://arxiv.org/abs/2601.07110](https://arxiv.org/abs/2601.07110)
-
-## Hugging Face Artifacts
-
-We publish the generated dataset artifacts at:
-
-https://huggingface.co/datasets/Salesforce/SCOPE-Persona/
-
-Two dataset configurations are provided:
-
-1. `persona_summaries`: First-person facet summaries plus sociodemographic profile data. Each facet is stored as its own top-level column for clean display in Hugging Face.
-2. `scope_qa`: Structured question-answer pairs for each SCOPE question, grouped by facet.
 
 ## Repository Structure
 
@@ -230,6 +209,25 @@ result = await augmenter.augment_persona(
 print(result["facet_responses"])
 ```
 
+## Paper
+
+**The Need for a Socially-Grounded Persona Framework for User Simulation**
+*Pranav Narayanan Venkit, Yu Li, Yada Pruksachatkun, Chien-Sheng Wu*
+Salesforce Research, Palo Alto, CA, USA
+**arXiv:** [https://arxiv.org/abs/2601.07110](https://arxiv.org/abs/2601.07110)
+
+## Hugging Face Artifacts
+
+We publish the generated dataset artifacts at:
+
+https://huggingface.co/datasets/Salesforce/SCOPE-Persona/
+
+Two dataset configurations are provided:
+
+1. `persona_summaries`: First-person facet summaries plus sociodemographic profile data. Each facet is stored as its own top-level column for clean display in Hugging Face.
+2. `scope_qa`: Structured question-answer pairs for each SCOPE question, grouped by facet.
+
+
 ## Citation
 
 If you use SCOPE in your research, please cite:
@@ -247,15 +245,7 @@ If you use SCOPE in your research, please cite:
 
 This project is licensed under the CC BY-NC 4.0 License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-For questions or collaboration inquiries:
-
-- Pranav Narayanan Venkit - pnarayananvenkit@salesforce.com
-- Yu Li - yu.li@salesforce.com
-- Yada Pruksachatkun - ypruksachatkun@salesforce.com
-- Chien-Sheng Wu - wu.jason@salesforce.com
 
 ## Acknowledgments
 
-This work was conducted at Salesforce Research. We thank all participants who contributed to the persona data collection.
+This work was conducted at Salesforce Research. We thank all participants who contributed to the study.
