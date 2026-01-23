@@ -1,8 +1,10 @@
 # SCOPE: Sociopsychological Construct of Persona Evaluation
 
-A framework for constructing and evaluating socially-grounded synthetic personas for LLM-based user simulation.
+A framework and toolkit that lets anyone take a persona and produce its full SCOPE counterpart by adding sociopsychological facets from a small set of basic inputs.
 
 ## Overview
+
+This repository prioritizes **persona augmentation**: given a persona (e.g., a JSONL record with basic demographic and background details), the pipeline generates a structured SCOPE profile with responses to a 141-item sociopsychological questionnaire. The result is a richer, standardized persona representation that can be used for user simulation, evaluation, and bias analysis.
 
 SCOPE is a human-grounded framework for constructing and evaluating synthetic personas. Unlike demographic-only or summary-based personas, SCOPE models personas as **multidimensional sociopsychological profiles** spanning eight behavioral facets:
 
@@ -17,8 +19,7 @@ SCOPE is a human-grounded framework for constructing and evaluating synthetic pe
 
 ## Pipeline Diagram
 
-![SCOPE pipeline diagram](Study_Pipeline.png)
-
+![SCOPE pipeline diagram](Images/Pipeline.png)
 
 ## Key Findings
 
@@ -38,21 +39,31 @@ Salesforce Research, Palo Alto, CA, USA
 
 **arXiv:** [https://arxiv.org/abs/2601.07110](https://arxiv.org/abs/2601.07110)
 
+## Hugging Face Artifacts
+
+We publish the generated dataset artifacts at:
+
+https://huggingface.co/datasets/Salesforce/SCOPE-Persona/
+
+Two dataset configurations are provided:
+
+1. `persona_summaries`: First-person facet summaries plus sociodemographic profile data. Each facet is stored as its own top-level column for clean display in Hugging Face.
+2. `scope_qa`: Structured question-answer pairs for each SCOPE question, grouped by facet.
+
 ## Repository Structure
 
 ```
 scope-personas/
 ├── src/
-│   ├── augment_persona.py                      # Generic persona augmentation pipeline
-│   ├── process_nemotron.py                     # Process NVIDIA Nemotron personas
-│   └── utils.py                                # Shared utilities
+│   ├── augment_persona.py          # Generic persona augmentation pipeline
+│   ├── process_nemotron.py         # Process NVIDIA Nemotron personas
+│   └── utils.py                    # Shared utilities
 ├── data/
-│   ├── questionnaire.md                        # 141-item sociopsychological protocol
-│   ├── Nemotron_Augmented_Sample.jsonl         # 10 Sample Personas of Nemotron + Scope Augment
-│   └── facet_definitions.json                  # Facet structure definitions
+│   ├── questionnaire.md            # 141-item sociopsychological protocol
+│   └── facet_definitions.json      # Facet structure definitions
 ├── examples/
-│   ├── sample_personas.jsonl                   # Example input personas
-│   └── sample_output.jsonl                     # Example augmented output
+│   ├── sample_personas.jsonl       # Example input personas
+│   └── sample_output.jsonl         # Example augmented output
 ├── requirements.txt
 └── README.md
 ```
@@ -234,7 +245,7 @@ If you use SCOPE in your research, please cite:
 
 ## License
 
-This project is licensed under CC BY-NC 4.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the CC BY-NC 4.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
