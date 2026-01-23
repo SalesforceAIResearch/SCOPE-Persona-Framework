@@ -19,7 +19,7 @@ SCOPE is a human-grounded framework for constructing and evaluating synthetic pe
 
 ## Pipeline Diagram
 
-![SCOPE pipeline diagram](Pipeline.png)
+![SCOPE pipeline diagram](Study_Pipeline.png)
 
 ## Key Findings
 
