@@ -51,8 +51,8 @@ scope-personas/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/scope-personas.git
-cd scope-personas
+git clone https://github.com/SalesforceAIResearch/SCOPE-Persona-Framework.git
+cd SCOPE-Persona-Framework
 
 # Create virtual environment
 python -m venv venv
